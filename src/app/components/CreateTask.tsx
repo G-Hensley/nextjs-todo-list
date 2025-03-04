@@ -8,6 +8,7 @@ export default function CreateTask( { tasks, setTasks }: { tasks: Task[], setTas
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        if (text.trim() === '') return;
         setTasks([...tasks, { id: tasks.length + 1, text, completed: false }]);
         setText('');
     }
