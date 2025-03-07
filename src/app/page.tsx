@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main className='flex flex-col gap-8 p-4 items-center h-screen'>
       <header>
-        <h1 className='text-4xl font-bold'>Todo List</h1>
+        <h1 className='text-4xl font-bold'>To Do List</h1>
       </header>
       <CreateTask tasks={tasks} setTasks={setTasks} />
       <Tasks tasks={tasks} setTasks={setTasks}/>
